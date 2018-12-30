@@ -6,6 +6,7 @@ import ReduxThunk from 'redux-thunk'; //middleware
 import firebase from 'firebase';
 import reducers from './src/reducers';
 import LoginForm from './src/components/LoginForm';
+import Router from './src/Router';
 
 
 class App extends Component {
@@ -25,9 +26,7 @@ class App extends Component {
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk))
     return (
       <Provider store={store}>
-        <LoginForm>
-
-        </LoginForm>
+        <Router />
       </Provider>
     );
   }
