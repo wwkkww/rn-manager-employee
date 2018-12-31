@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 import AuthReducer from './AuthReducer';
+import EmployeeFormReducer from './EmployeeFormReducer';
 
 export default combineReducers({
-    //[key state name] : reducer
-    auth : AuthReducer
+    //[state key name for mapStateToProps] : reducer
+    auth : AuthReducer,
+    employeeForm: EmployeeFormReducer
 })
