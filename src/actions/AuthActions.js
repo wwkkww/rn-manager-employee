@@ -24,6 +24,8 @@ export const passwordChanged = (text) => {
 }
 
 export const loginUser = ({ email, password }) => { //action creator
+    
+    //redux-thunk rules (return with manual dispatch)
     return (dispatch) => {
         dispatch({ type: LOGIN_USER });
 

@@ -8,11 +8,9 @@ import { emailChanged, passwordChanged, loginUser } from '../actions'; //action 
 class LoginForm extends Component {
     onEmailChange(text) {
         this.props.emailChanged(text);
-        // console.log('emailChanged', text)
     }
 
     onPasswordChange = (text) => {
-        // console.log('passwordChange', text)
         this.props.passwordChanged(text);
     }
 
