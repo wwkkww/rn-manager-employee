@@ -25,6 +25,7 @@ export default ( state = INITIAL_STATE, action ) => {
         
         case EMPLOYEE_DELETE_SUCCESS:
             return INITIAL_STATE;
+
         default:
             return state;
     }

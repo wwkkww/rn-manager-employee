@@ -1,6 +1,8 @@
 {
   "name": "manager",
   "version": "0.0.1",
+  "description": "A tools for helping employer to manage their employees",
+  "author": "WwkkwW",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
